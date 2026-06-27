@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="PCN-101 — монтаж и обслуживание систем пожарной сигнализации, видеонаблюдения, мониторинг АПС, разработка ПСД и планов эвакуации.">
+  <title>PCN-101 — Системы безопасности</title>
+  <script>
+    (function () {
+      var t = localStorage.getItem('theme') || 'light';
+      var l = localStorage.getItem('lang') || 'ru';
+      document.documentElement.setAttribute('data-theme', t);
+      document.documentElement.setAttribute('lang', l);
+    })();
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#" class="logo">
+        <span class="logo__mark">PCN</span>
+        <span class="logo__num">101</span>
+      </a>
+      <nav class="nav" id="nav">
+        <a href="#services" class="nav__link" data-i18n="nav.services">Услуги</a>
+        <a href="#about" class="nav__link" data-i18n="nav.about">О компании</a>
+        <a href="#advantages" class="nav__link" data-i18n="nav.advantages">Преимущества</a>
+        <a href="#contact" class="nav__link" data-i18n="nav.contact">Контакты</a>
+        <div class="nav__controls-mobile">
+          <div class="lang-switcher" id="langSwitcherMobile">
+            <button type="button" class="lang-btn" data-lang="ru">RU</button>
+            <button type="button" class="lang-btn" data-lang="en">EN</button>
+            <button type="button" class="lang-btn" data-lang="kk">KZ</button>
+          </div>
+          <button type="button" class="theme-toggle theme-toggle--mobile" id="themeToggleMobile" aria-label="">
+            <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+            <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+          </button>
+        </div>
+        <a href="#contact" class="btn btn--primary btn--full nav__cta-mobile" data-i18n="nav.callOrder">Заказать звонок</a>
+      </nav>
+      <div class="header__controls">
+        <div class="lang-switcher" id="langSwitcher">
+          <button type="button" class="lang-btn" data-lang="ru" title="Русский">RU</button>
+          <button type="button" class="lang-btn" data-lang="en" title="English">EN</button>
+          <button type="button" class="lang-btn" data-lang="kk" title="Қазақша">KZ</button>
+        </div>
+        <button type="button" class="theme-toggle" id="themeToggle" aria-label="">
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+        </button>
+      </div>
+      <a href="#contact" class="btn btn--primary header__cta" data-i18n="nav.callOrder">Заказать звонок</a>
+      <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero__bg">
+        <div class="hero__grid"></div>
+        <div class="hero__glow hero__glow--1"></div>
+        <div class="hero__glow hero__glow--2"></div>
+      </div>
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <div class="hero__badge">
+            <span class="hero__badge-dot"></span>
+            <span data-i18n="hero.badge">Лицензированный монтаж и обслуживание</span>
+          </div>
+          <h1 class="hero__title">
+            <span data-i18n="hero.title1">Комплексные системы </span><span class="hero__title-accent" data-i18n="hero.titleAccent">безопасности</span><span data-i18n="hero.title2"> для вашего объекта</span>
+          </h1>
+          <p class="hero__text" data-i18n="hero.text">
+            PCN-101 — профессиональный монтаж пожарной сигнализации, видеонаблюдения
+            и мониторинг АПС с выводом на пульт ДЧС. Полный цикл: от проектирования до аудита.
+          </p>
+          <div class="hero__actions">
+            <a href="#contact" class="btn btn--primary btn--lg" data-i18n="hero.ctaConsult">Получить консультацию</a>
+            <a href="#services" class="btn btn--ghost btn--lg" data-i18n="hero.ctaServices">Наши услуги</a>
+          </div>
+          <div class="hero__stats">
+            <div class="hero__stat">
+              <span class="hero__stat-value" data-count="150">0</span><span class="hero__stat-suffix">+</span>
+              <span class="hero__stat-label" data-i18n="hero.statObjects">объектов</span>
+            </div>
+            <div class="hero__stat">
+              <span class="hero__stat-value" data-count="10">0</span><span class="hero__stat-suffix">+</span>
+              <span class="hero__stat-label" data-i18n="hero.statYears">лет опыта</span>
+            </div>
+            <div class="hero__stat">
+              <span class="hero__stat-value" data-count="24">0</span><span class="hero__stat-suffix">/7</span>
+              <span class="hero__stat-label" data-i18n="hero.statMonitoring">мониторинг</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero__visual">
+          <div class="hero__card hero__card--main">
+            <div class="hero__card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                <path d="M2 17l10 5 10-5"/>
+                <path d="M2 12l10 5 10-5"/>
+              </svg>
+            </div>
+            <h3 data-i18n="hero.cardTitle">АПС + видеонаблюдение</h3>
+            <p data-i18n="hero.cardText">Единая система контроля и оповещения</p>
+            <div class="hero__card-status">
+              <span class="status-dot status-dot--active"></span>
+              <span data-i18n="hero.cardStatus">Система активна</span>
+            </div>
+          </div>
+          <div class="hero__card hero__card--float hero__card--top">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            </svg>
+            <span data-i18n="hero.floatProtect">Защита 24/7</span>
+          </div>
+          <div class="hero__card hero__card--float hero__card--bottom">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
+            </svg>
+            <span data-i18n="hero.floatDispatch">Вывод на пульт ДЧС</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services section" id="services">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__tag" data-i18n="services.tag">Услуги</span>
+          <h2 class="section__title" data-i18n="services.title">Полный спектр работ по безопасности</h2>
+          <p class="section__desc" data-i18n="services.desc">
+            Обеспечиваем защиту объектов любой сложности — от монтажа до регулярного обслуживания и аудита.
+          </p>
+        </div>
+        <div class="services__grid">
+          <article class="service-card">
+            <div class="service-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M18 8A6 6 0 006 8c0 7-3 9-3 9h18s-3-2-3-9"/>
+                <path d="M13.73 21a2 2 0 01-3.46 0"/>
+              </svg>
+            </div>
+            <h3 class="service-card__title" data-i18n="services.fireAlarm.title">Пожарная сигнализация</h3>
+            <p class="service-card__text" data-i18n="services.fireAlarm.text">Монтаж и обслуживание систем автоматической пожарной сигнализации (АПС) в соответствии с нормативами и требованиями надзорных органов.</p>
+          </article>
+          <article class="service-card">
+            <div class="service-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <rect x="2" y="3" width="20" height="14" rx="2"/>
+                <path d="M8 21h8M12 17v4"/>
+                <circle cx="12" cy="10" r="2"/>
+              </svg>
+            </div>
+            <h3 class="service-card__title" data-i18n="services.monitoring.title">Мониторинг АПС</h3>
+            <p class="service-card__text" data-i18n="services.monitoring.text">Круглосуточный мониторинг системы автоматической пожарной сигнализации с выводом сигналов на пульт дежурной части (ДЧС).</p>
+          </article>
+          <article class="service-card">
+            <div class="service-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M23 19a2 2 0 01-2 2H3a2 2 0 01-2-2V8a2 2 0 012-2h4l2-3h6l2 3h4a2 2 0 012 2z"/>
+                <circle cx="12" cy="13" r="4"/>
+              </svg>
+            </div>
+            <h3 class="service-card__title" data-i18n="services.video.title">Видеонаблюдение</h3>
+            <p class="service-card__text" data-i18n="services.video.text">Проектирование, монтаж и техническое обслуживание систем видеонаблюдения для коммерческих и промышленных объектов.</p>
+          </article>
+          <article class="service-card">
+            <div class="service-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/>
+                <polyline points="14 2 14 8 20 8"/>
+                <line x1="16" y1="13" x2="8" y2="13"/>
+                <line x1="16" y1="17" x2="8" y2="17"/>
+              </svg>
+            </div>
+            <h3 class="service-card__title" data-i18n="services.psd.title">Разработка ПСД</h3>
+            <p class="service-card__text" data-i18n="services.psd.text">Проектно-сметная документация, планы эвакуации и схемы размещения оборудования для согласования с контролирующими органами.</p>
+          </article>
+          <article class="service-card">
+            <div class="service-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M9 11l3 3L22 4"/>
+                <path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/>
+              </svg>
+            </div>
+            <h3 class="service-card__title" data-i18n="services.audit.title">Аудит пожарной безопасности</h3>
+            <p class="service-card__text" data-i18n="services.audit.text">Комплексная проверка состояния пожарной безопасности объекта, выявление нарушений и рекомендации по устранению.</p>
+          </article>
+          <article class="service-card service-card--accent">
+            <div class="service-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <circle cx="12" cy="12" r="10"/>
+                <path d="M12 6v6l4 2"/>
+              </svg>
+            </div>
+            <h3 class="service-card__title" data-i18n="services.maintenance.title">Техническое обслуживание</h3>
+            <p class="service-card__text" data-i18n="services.maintenance.text">Регулярное ТО всех установленных систем — гарантия бесперебойной работы и соответствия нормативным требованиям.</p>
+            <a href="#contact" class="service-card__link" data-i18n="services.maintenance.link">Оставить заявку →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="about section" id="about">
+      <div class="container about__inner">
+        <div class="about__content">
+          <span class="section__tag" data-i18n="about.tag">О компании</span>
+          <h2 class="section__title" data-i18n="about.title">PCN-101 — надёжный партнёр в сфере безопасности</h2>
+          <p class="about__text" data-i18n="about.text1">Мы специализируемся на комплексном обеспечении пожарной безопасности и видеоконтроля для бизнес-центров, складов, производств и жилых комплексов.</p>
+          <p class="about__text" data-i18n="about.text2">Наша команда инженеров выполняет работы «под ключ»: от разработки проектной документации и монтажа оборудования до подключения к пульту ДЧС и регулярного технического обслуживания.</p>
+          <ul class="about__list">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              <span data-i18n="about.list1">Работа по действующим нормам и стандартам</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              <span data-i18n="about.list2">Сертифицированное оборудование ведущих производителей</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              <span data-i18n="about.list3">Гарантия на выполненные работы</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              <span data-i18n="about.list4">Оперативный выезд на объект</span>
+            </li>
+          </ul>
+        </div>
+        <div class="about__visual">
+          <div class="about__image">
+            <div class="about__image-overlay"></div>
+            <div class="about__image-content">
+              <div class="about__metric">
+                <span class="about__metric-value">100%</span>
+                <span class="about__metric-label" data-i18n="about.metric1Label">соответствие нормам</span>
+              </div>
+              <div class="about__metric">
+                <span class="about__metric-value">48ч</span>
+                <span class="about__metric-label" data-i18n="about.metric2Label">срок выезда специалиста</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="advantages section" id="advantages">
+      <div class="container">
+        <div class="section__header section__header--center">
+          <span class="section__tag" data-i18n="advantages.tag">Почему мы</span>
+          <h2 class="section__title" data-i18n="advantages.title">Преимущества работы с PCN-101</h2>
+        </div>
+        <div class="advantages__grid">
+          <div class="advantage">
+            <span class="advantage__num">01</span>
+            <h3 class="advantage__title" data-i18n="advantages.item1Title">Комплексный подход</h3>
+            <p class="advantage__text" data-i18n="advantages.item1Text">Все виды работ по безопасности — одна компания, один договор, единая ответственность.</p>
+          </div>
+          <div class="advantage">
+            <span class="advantage__num">02</span>
+            <h3 class="advantage__title" data-i18n="advantages.item2Title">Прозрачная смета</h3>
+            <p class="advantage__text" data-i18n="advantages.item2Text">Детальная проектно-сметная документация без скрытых платежей и неожиданных доплат.</p>
+          </div>
+          <div class="advantage">
+            <span class="advantage__num">03</span>
+            <h3 class="advantage__title" data-i18n="advantages.item3Title">Мониторинг 24/7</h3>
+            <p class="advantage__text" data-i18n="advantages.item3Text">Круглосуточный контроль систем с мгновенной передачей сигналов на пульт ДЧС.</p>
+          </div>
+          <div class="advantage">
+            <span class="advantage__num">04</span>
+            <h3 class="advantage__title" data-i18n="advantages.item4Title">Опытная команда</h3>
+            <p class="advantage__text" data-i18n="advantages.item4Text">Инженеры с профильным образованием и многолетним опытом на объектах любой сложности.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="process section">
+      <div class="container">
+        <div class="section__header section__header--center">
+          <span class="section__tag" data-i18n="process.tag">Как мы работаем</span>
+          <h2 class="section__title" data-i18n="process.title">Этапы сотрудничества</h2>
+        </div>
+        <div class="process__steps">
+          <div class="process__step">
+            <div class="process__step-num">1</div>
+            <h3 data-i18n="process.step1Title">Заявка и консультация</h3>
+            <p data-i18n="process.step1Text">Обсуждаем задачи, выезжаем на объект для первичного осмотра.</p>
+          </div>
+          <div class="process__connector"></div>
+          <div class="process__step">
+            <div class="process__step-num">2</div>
+            <h3 data-i18n="process.step2Title">Проектирование</h3>
+            <p data-i18n="process.step2Text">Разрабатываем ПСД, планы эвакуации и техническое решение.</p>
+          </div>
+          <div class="process__connector"></div>
+          <div class="process__step">
+            <div class="process__step-num">3</div>
+            <h3 data-i18n="process.step3Title">Монтаж и пусконаладка</h3>
+            <p data-i18n="process.step3Text">Устанавливаем оборудование, проводим настройку и тестирование.</p>
+          </div>
+          <div class="process__connector"></div>
+          <div class="process__step">
+            <div class="process__step-num">4</div>
+            <h3 data-i18n="process.step4Title">Обслуживание</h3>
+            <p data-i18n="process.step4Text">Подключаем мониторинг, обеспечиваем регулярное ТО и поддержку.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact section" id="contact">
+      <div class="container contact__inner">
+        <div class="contact__info">
+          <span class="section__tag" data-i18n="contact.tag">Контакты</span>
+          <h2 class="section__title" data-i18n="contact.title">Готовы обсудить ваш проект?</h2>
+          <p class="contact__text" data-i18n="contact.text">Оставьте заявку — мы свяжемся с вами в течение рабочего дня и подготовим индивидуальное предложение.</p>
+          <div class="contact__details">
+            <a href="tel:+78001234567" class="contact__item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
+              </svg>
+              <div>
+                <span class="contact__item-label" data-i18n="contact.phoneLabel">Телефон</span>
+                <span class="contact__item-value">+7 (800) 123-45-67</span>
+              </div>
+            </a>
+            <a href="mailto:info@pcn-101.ru" class="contact__item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                <polyline points="22,6 12,13 2,6"/>
+              </svg>
+              <div>
+                <span class="contact__item-label" data-i18n="contact.emailLabel">Email</span>
+                <span class="contact__item-value">info@pcn-101.ru</span>
+              </div>
+            </a>
+            <div class="contact__item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <circle cx="12" cy="12" r="10"/>
+                <polyline points="12 6 12 12 16 14"/>
+              </svg>
+              <div>
+                <span class="contact__item-label" data-i18n="contact.hoursLabel">Режим работы</span>
+                <span class="contact__item-value" data-i18n="contact.hoursValue">Пн–Пт: 9:00–18:00</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <form class="contact__form" id="contactForm" novalidate>
+          <div class="form__group">
+            <label for="name" data-i18n="contact.formName">Ваше имя</label>
+            <input type="text" id="name" name="name" data-i18n-placeholder="contact.formNamePlaceholder" placeholder="Иван Иванов" required>
+            <span class="form__error" data-for="name"></span>
+          </div>
+          <div class="form__group">
+            <label for="phone" data-i18n="contact.formPhone">Телефон</label>
+            <input type="tel" id="phone" name="phone" data-i18n-placeholder="contact.formPhonePlaceholder" placeholder="+7 (___) ___-__-__" required>
+            <span class="form__error" data-for="phone"></span>
+          </div>
+          <div class="form__group">
+            <label for="service" data-i18n="contact.formService">Интересующая услуга</label>
+            <select id="service" name="service">
+              <option value="" data-i18n="contact.formServiceDefault">Выберите услугу</option>
+              <option value="aps" data-i18n="contact.formServiceAps">Пожарная сигнализация</option>
+              <option value="monitoring" data-i18n="contact.formServiceMonitoring">Мониторинг АПС</option>
+              <option value="video" data-i18n="contact.formServiceVideo">Видеонаблюдение</option>
+              <option value="psd" data-i18n="contact.formServicePsd">Разработка ПСД</option>
+              <option value="audit" data-i18n="contact.formServiceAudit">Аудит пожарной безопасности</option>
+              <option value="other" data-i18n="contact.formServiceOther">Другое</option>
+            </select>
+          </div>
+          <div class="form__group">
+            <label for="message" data-i18n="contact.formMessage">Сообщение</label>
+            <textarea id="message" name="message" rows="4" data-i18n-placeholder="contact.formMessagePlaceholder" placeholder="Опишите ваш объект или задачу"></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--lg btn--full" data-i18n="contact.formSubmit">Отправить заявку</button>
+          <p class="form__note" data-i18n="contact.formNote">Нажимая кнопку, вы соглашаетесь на обработку персональных данных</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="#" class="logo">
+          <span class="logo__mark">PCN</span>
+          <span class="logo__num">101</span>
+        </a>
+        <p class="footer__desc" data-i18n="footer.desc">Монтаж и обслуживание систем безопасности</p>
+      </div>
+      <div class="footer__links">
+        <a href="#services" data-i18n="nav.services">Услуги</a>
+        <a href="#about" data-i18n="nav.about">О компании</a>
+        <a href="#contact" data-i18n="nav.contact">Контакты</a>
+      </div>
+      <p class="footer__copy" data-i18n="footer.copy">&copy; 2026 PCN-101. Все права защищены.</p>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M22 11.08V12a10 10 0 11-5.93-9.14"/>
+      <polyline points="22 4 12 14.01 9 11.01"/>
+    </svg>
+    <span data-i18n="contact.toast">Заявка отправлена! Мы свяжемся с вами в ближайшее время.</span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

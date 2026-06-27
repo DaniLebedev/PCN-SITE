@@ -1,0 +1,137 @@
+{
+  "meta": {
+    "title": "PCN-101 — Security Systems",
+    "description": "PCN-101 — installation and maintenance of fire alarm systems, video surveillance, APS monitoring, design documentation and evacuation plans."
+  },
+  "ui": {
+    "openMenu": "Open menu",
+    "themeLight": "Light theme",
+    "themeDark": "Dark theme",
+    "langRu": "Russian",
+    "langEn": "English",
+    "langKk": "Kazakh"
+  },
+  "nav": {
+    "services": "Services",
+    "about": "About",
+    "advantages": "Advantages",
+    "contact": "Contact",
+    "callOrder": "Request a call"
+  },
+  "hero": {
+    "badge": "Licensed installation and maintenance",
+    "title1": "Comprehensive ",
+    "titleAccent": "security",
+    "title2": " systems for your facility",
+    "text": "PCN-101 provides professional fire alarm and video surveillance installation, APS monitoring with dispatch center integration. Full cycle: from design to audit.",
+    "ctaConsult": "Get a consultation",
+    "ctaServices": "Our services",
+    "statObjects": "facilities",
+    "statYears": "years of experience",
+    "statMonitoring": "monitoring",
+    "cardTitle": "Fire alarm + video surveillance",
+    "cardText": "Unified monitoring and alert system",
+    "cardStatus": "System active",
+    "floatProtect": "24/7 protection",
+    "floatDispatch": "Dispatch center link"
+  },
+  "services": {
+    "tag": "Services",
+    "title": "Full range of security services",
+    "desc": "We protect facilities of any complexity — from installation to regular maintenance and audit.",
+    "fireAlarm": {
+      "title": "Fire alarm systems",
+      "text": "Installation and maintenance of automatic fire alarm systems (APS) in compliance with regulations and supervisory authority requirements."
+    },
+    "monitoring": {
+      "title": "APS monitoring",
+      "text": "24/7 monitoring of automatic fire alarm systems with signal transmission to the emergency dispatch center."
+    },
+    "video": {
+      "title": "Video surveillance",
+      "text": "Design, installation and maintenance of video surveillance systems for commercial and industrial facilities."
+    },
+    "psd": {
+      "title": "Design documentation",
+      "text": "Project and estimate documentation, evacuation plans and equipment layout schemes for regulatory approval."
+    },
+    "audit": {
+      "title": "Fire safety audit",
+      "text": "Comprehensive assessment of fire safety conditions, identification of violations and remediation recommendations."
+    },
+    "maintenance": {
+      "title": "Technical maintenance",
+      "text": "Regular maintenance of all installed systems — ensuring uninterrupted operation and regulatory compliance.",
+      "link": "Submit a request →"
+    }
+  },
+  "about": {
+    "tag": "About us",
+    "title": "PCN-101 — a reliable security partner",
+    "text1": "We specialize in comprehensive fire safety and video monitoring for business centers, warehouses, manufacturing plants and residential complexes.",
+    "text2": "Our engineering team delivers turnkey solutions: from design documentation and equipment installation to dispatch center integration and ongoing maintenance.",
+    "list1": "Work in accordance with current standards and regulations",
+    "list2": "Certified equipment from leading manufacturers",
+    "list3": "Warranty on all completed work",
+    "list4": "Rapid on-site response",
+    "metric1Label": "regulatory compliance",
+    "metric2Label": "specialist response time"
+  },
+  "advantages": {
+    "tag": "Why us",
+    "title": "Benefits of working with PCN-101",
+    "item1Title": "Comprehensive approach",
+    "item1Text": "All security services — one company, one contract, single point of responsibility.",
+    "item2Title": "Transparent pricing",
+    "item2Text": "Detailed project estimates with no hidden fees or unexpected surcharges.",
+    "item3Title": "24/7 monitoring",
+    "item3Text": "Round-the-clock system control with instant signal transmission to the dispatch center.",
+    "item4Title": "Experienced team",
+    "item4Text": "Engineers with specialized education and years of experience on projects of any complexity."
+  },
+  "process": {
+    "tag": "How we work",
+    "title": "Stages of cooperation",
+    "step1Title": "Request and consultation",
+    "step1Text": "We discuss your needs and visit the site for an initial inspection.",
+    "step2Title": "Design",
+    "step2Text": "We develop design documentation, evacuation plans and technical solutions.",
+    "step3Title": "Installation and commissioning",
+    "step3Text": "We install equipment, configure and test all systems.",
+    "step4Title": "Maintenance",
+    "step4Text": "We connect monitoring and provide regular maintenance and support."
+  },
+  "contact": {
+    "tag": "Contact",
+    "title": "Ready to discuss your project?",
+    "text": "Submit a request — we will contact you within one business day with a tailored proposal.",
+    "phoneLabel": "Phone",
+    "emailLabel": "Email",
+    "hoursLabel": "Business hours",
+    "hoursValue": "Mon–Fri: 9:00 AM–6:00 PM",
+    "formName": "Your name",
+    "formNamePlaceholder": "John Smith",
+    "formPhone": "Phone",
+    "formPhonePlaceholder": "+7 (___) ___-__-__",
+    "formService": "Service of interest",
+    "formServiceDefault": "Select a service",
+    "formServiceAps": "Fire alarm systems",
+    "formServiceMonitoring": "APS monitoring",
+    "formServiceVideo": "Video surveillance",
+    "formServicePsd": "Design documentation",
+    "formServiceAudit": "Fire safety audit",
+    "formServiceOther": "Other",
+    "formMessage": "Message",
+    "formMessagePlaceholder": "Describe your facility or requirements",
+    "formSubmit": "Submit request",
+    "formSubmitting": "Sending...",
+    "formNote": "By clicking the button, you agree to the processing of personal data",
+    "errorName": "Please enter your name",
+    "errorPhone": "Please enter a valid phone number",
+    "toast": "Request sent! We will contact you shortly."
+  },
+  "footer": {
+    "desc": "Installation and maintenance of security systems",
+    "copy": "© 2026 PCN-101. All rights reserved."
+  }
+}
