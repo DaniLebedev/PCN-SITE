@@ -242,10 +242,28 @@
     e.target.value = formatted;
   });
 
+
+  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+  document.getElementById('email').addEventListener('input', e => {
+    const email = e.target.value;
+    const emailInput = document.getElementById('email');
+    const errorSpan = document.querySelector('.form__error[data-for="email"]');
+
+    if (email && !emailPattern.test(email)) {
+      emailInput.classList.add('error');
+      errorSpan.textContent = t('contact.errorEmail');
+    } else {
+      emailInput.classList.remove('error');
+      errorSpan.textContent = '';
+    }
+  });
+
   function validateForm() {
     let valid = true;
     const name = document.getElementById('name');
     const phone = document.getElementById('phone');
+    const email = document.getElementById('email');
 
     document.querySelectorAll('.form__error').forEach(el => (el.textContent = ''));
     document.querySelectorAll('.error').forEach(el => el.classList.remove('error'));
@@ -257,6 +275,11 @@
 
     if (phone.value.replace(/\D/g, '').length < 11) {
       showError('phone', t('contact.errorPhone'));
+      valid = false;
+    }
+
+    if (!email.value || !emailPattern.test(email.value)) {
+      showError('email', t('contact.errorEmail'));
       valid = false;
     }
 
