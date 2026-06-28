@@ -504,14 +504,13 @@ img {
 
 .hero__stat {
   display: flex;
-  flex-direction: column;
+  align-items: center;
 }
 
 .hero__stat-value {
   font-size: 2rem;
   font-weight: 800;
   color: var(--heading);
-  line-height: 1;
 }
 
 .hero__stat-suffix {
@@ -523,7 +522,7 @@ img {
 .hero__stat-label {
   font-size: 0.8125rem;
   color: var(--text-muted);
-  margin-top: 4px;
+  margin-left: 4px;
 }
 
 /* Hero Visual */
@@ -910,7 +909,7 @@ img {
   display: block;
   font-size: 2.5rem;
   font-weight: 800;
-  color: rgba(220, 38, 38, 0.15);
+  color: var(--red);
   line-height: 1;
   margin-bottom: 16px;
 }
@@ -1344,6 +1343,7 @@ a.contact__item:hover {
     transform: translateX(0);
     opacity: 1;
     pointer-events: all;
+    height: 100svh;
   }
 
   .nav__link {
