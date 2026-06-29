@@ -109,6 +109,8 @@
     "emailLabel": "Email",
     "hoursLabel": "Режим работы",
     "hoursValue": "Пн–Пт: 9:00–18:00",
+    "mapLabel": "Адрес",
+    "mapValue": "Республика Казахстан, г.Павлодар, ул.Торайгырова, 79/1 БЦ \"Respect\", офис 1",
     "formName": "Ваше имя",
     "formNamePlaceholder": "Иван Иванов",
     "formPhone": "Телефон",

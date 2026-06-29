@@ -109,6 +109,8 @@
     "emailLabel": "Email",
     "hoursLabel": "Business hours",
     "hoursValue": "Mon–Fri: 9:00 AM–6:00 PM",
+    "mapLabel": "Address",
+    "mapValue": "Republic of Kazakhstan, Pavlodar city, Toraygirva street, 79/1 Respect Building, office 1",
     "formName": "Your name",
     "formNamePlaceholder": "John Smith",
     "formPhone": "Phone",
